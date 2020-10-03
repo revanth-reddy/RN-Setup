@@ -7,9 +7,9 @@ If you are new to mobile development, the easiest way to get started is with Exp
 
 If you are already familiar with mobile development, you may want to use React Native CLI. It requires Xcode or Android Studio to get started. If you already have one of these tools installed, you should be able to get up and running within a few minutes. If they are not installed, you should expect to spend about an hour installing and configuring them.
 
-Expo CLI Quickstart React Native CLI Quickstart
+ React Native CLI Quickstart
 
-Follow these instructions if you need to build native code in your project. For example, if you are integrating React Native into an existing application, or if you "ejected" from Expo, you'll need this section.
+
 
 The instructions are a bit different depending on your development operating system, and whether you want to start developing for iOS or Android. If you want to develop for both Android and iOS, that's fine - you can pick one to start with, since the setup is a bit different.
 
@@ -19,9 +19,9 @@ macOS Windows Linux
 
 Target OS:
 
-iOS Android
+Android
 
-Installing dependencies
+# Installing dependencies
 
 You will need Node, the React Native command line interface, a JDK, and Android Studio.
 
@@ -35,7 +35,7 @@ Java Development Kit
 
 React Native requires at least the version 8 of the Java SE Development Kit (JDK). You may download and install OpenJDK from AdoptOpenJDK or your system packager. You may also Download and install Oracle JDK 14 if desired.
 
-Android development environment
+# Android development environment
 
 Setting up your development environment can be somewhat tedious if you're new to Android development. If you're already familiar with Android development, there are a few things you may need to configure. In either case, please make sure to carefully follow the next few steps.
 
@@ -101,3 +101,11 @@ Follow the Watchman installation guide to compile and install Watchman from sour
 
 Watchman is a tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance and increased compatibility in certain edge cases (translation: you may be able to get by without installing this, but your mileage may vary; installing this now may save you from a headache later).
 
+
+# React Native Command Line Interface
+React Native has a built-in command line interface. Rather than install and manage a specific version of the CLI globally, we recommend you access the current version at runtime using npx, which ships with Node.js. With npx react-native <command>, the current stable version of the CLI will be downloaded and executed at the time the command is run.
+
+# Creating a new application
+```
+npx react-native init <app name>
+```
