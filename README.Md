@@ -1,5 +1,5 @@
 # Setting up the development environment
-Setting up the development environment
+Setting up the Development Environment
 
 This page will help you install and build your first React Native app.
 
